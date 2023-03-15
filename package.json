@@ -12,6 +12,9 @@
   "description": "mern application",
   "main": "app.js",
   "start": "node app.js",
+  "engines" : { 
+    "node" : ">=8.0.0" 
+  },
   "scripts": {
     "start": "node app.js"
   },

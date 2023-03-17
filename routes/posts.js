@@ -72,4 +72,17 @@ router.get("/:id",async(req,res)=>{
     
  }
 })
+
+//Get ALl Post
+router.get("/", async(req,res)=>{
+
+  try {
+    const posts= await Post.find();
+    res.status(200).json(posts)
+  } catch (err) {
+    res.status(500).json("failed with backedn error");
+    
+  }
+
+})
 module.exports = router;
